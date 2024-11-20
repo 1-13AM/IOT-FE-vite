@@ -29,14 +29,8 @@ const getAllHistory=(data)=>{
 const getUserAttendanceByDay=(day)=>{
     return axios.get(`/api/get-user-attendance-by-day?date=${day}`)
 }
-const getUserAttendanceByWeek=(week)=>{
-    return axios.get(`/api/get-user-attendance-by-week?date=${week}`)
-}
 const getUserAttendanceByMonth=(month)=>{
     return axios.get(`/api/get-user-attendance-by-month?month=${month}`)
-}
-const getUserAttendanceByYear=(year)=>{
-    return axios.get(`/api/get-user-attendance-by-year?year=${year}`)
 }
 const getAttendanceByIdAndMonth=(data)=>{
     return axios.get(`/api/get-attendance-by-id-and-month?id=${data.id}&month=${data.month}`)
@@ -52,8 +46,6 @@ export {
     createAttendanceAndHistory,
     getAllHistory,
     getUserAttendanceByDay,
-    getUserAttendanceByWeek,
     getUserAttendanceByMonth,
-    getUserAttendanceByYear,
     getAttendanceByIdAndMonth
 }

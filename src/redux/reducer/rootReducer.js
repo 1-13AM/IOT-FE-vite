@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
-import adminReducer from './adminReducer'; // Nhập adminReducer
+import authReducer from './authReducer'; // Import the authReducer
+import adminReducer from './adminReducer'; // Import other reducers
 
-// Kết hợp các reducer
 const rootReducer = combineReducers({
-    admin: adminReducer, // Reducer cho phần admin
-    // Các reducer khác có thể thêm ở đây
+    auth: authReducer, // Add authReducer to the root reducer
+    admin: adminReducer, // Other reducers
 });
 
 export default rootReducer;
