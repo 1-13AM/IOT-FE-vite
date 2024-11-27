@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import { getUserAttendanceByMonth, getUserAttendanceByDay, getAllHistory } from '../../services/userService';
-import '../style/History.scss';
+// import '../style/History.scss';
 import moment from 'moment';
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';

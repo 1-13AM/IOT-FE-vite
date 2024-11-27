@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import { getAllUser, getAllHistory } from '../../services/userService';
-import '../style/History.scss';
+// import '../style/History.scss';
 import moment from 'moment-timezone';
 import { Calendar as CalendarIcon, Search } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";

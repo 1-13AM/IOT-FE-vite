@@ -12,7 +12,7 @@ import History from './components/Container/History';
 import Statistics from './components/Container/Statistics';
 import DetailUserAttendanceMonth from './components/Container/DetailUserAttendanceMonth';
 import ProtectedRoute from './components/protectedRoute/ProtectedRoute'; // Import the ProtectedRoute component
-
+import DeviceManagement from './components/Container/DeviceManagement';
 class App extends Component {
   render() {
     const { isAuthenticated } = this.props;
@@ -53,6 +53,14 @@ class App extends Component {
               element={
                 <ProtectedRoute>
                   <AttendanceToday />
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/device-management" 
+              element={
+                <ProtectedRoute>
+                  <DeviceManagement />
                 </ProtectedRoute>
               } 
             />

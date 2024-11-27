@@ -83,6 +83,19 @@ const Nav = () => {
             Thống kê
           </Button>
         </NavLink>
+
+        <NavLink 
+          to="/device-management"
+          className={({ isActive }) => 
+            `transition-all duration-200 ease-in-out transform hover:scale-105 ${
+              isActive ? 'bg-emerald-700 rounded-lg' : ''
+            }`}
+        >
+          <Button variant="ghost" className="text-white hover:bg-emerald-700">
+            <BarChart className="h-5 w-5 mr-2" />
+            Quản lý thiết bị
+          </Button>
+        </NavLink>
       </div>
 
       <div className="flex items-center space-x-4">
